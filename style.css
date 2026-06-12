@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f1a0a;
+  color: #f4e9d8;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 26, 10, 0.95);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff9f1c;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav ul a {
+  color: #f4e9d8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  color: #ff9f1c;
+}
+
+/* Hero - Tarsila Style */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.75), rgba(34, 139, 34, 0.65)),
+              url('https://picsum.photos/1920/1080?random=35');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 850px;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #ffe8c4;
+}
+
+/* Botão */
+.btn {
+  padding: 18px 48px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.primary {
+  background: #ff9f1c;
+  color: #0f1a0a;
+}
+
+.primary:hover {
+  background: #ffbb4d;
+  transform: scale(1.05);
+}
+
+/* Seções */
+.section {
+  padding: 120px 8%;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ff9f1c;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #1e2f1a;
+  padding: 45px 30px;
+  border-radius: 28px;
+  text-align: center;
+  transition: 0.4s;
+  border: 3px solid #d4a017;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  border-color: #ff9f1c;
+}
+
+.icon {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffdd9e;
+}
+
+/* Galeria */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 6px solid #d4a017;
+  transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+  border-color: #ff9f1c;
+}
+
+/* Footer */
+footer {
+  background: #0a1407;
+  padding: 70px 8% 40px;
+  text-align: center;
+}
+
+.footer-content .logo {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  opacity: 0.85;
+  margin: 8px 0;
+}
